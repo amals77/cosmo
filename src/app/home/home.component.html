@@ -1,0 +1,27 @@
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner maincoro">
+        <div class="item active">
+            <img src="../../assets/images/covr1.jpg" class="coro">
+        </div>
+
+        <div class="item">
+            <img src="../../assets/images/covr2.jpg" class="coro">
+        </div>
+        <div class="off">
+            <p class="p1">SUMMER SALE - 50% OFF</p>
+            <p class="p2">Enjoy upto 50% off selected item!</p>
+            <p class="p2">Don't miss it. Get yours favourite items now.</p>
+            <div style="margin-left: 20vw;">
+                <a [routerLink]="['/summer']" (click)="selectProduct('SS')"><button class="shopnow">SHOP NOW  ❯</button></a>
+            </div>
+        </div>
+    </div>
+</div>

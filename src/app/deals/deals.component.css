@@ -1,0 +1,74 @@
+.tops {
+    margin-top: 3vw;
+    width: 100%;
+    display: inline-block;
+}
+
+.top {
+    margin-left: 2.5vw;
+    width: 30%;
+    float: left;
+}
+
+.pu {
+    font-size: 2vw;
+    color: white;
+    font-family: serif;
+    float: left;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.p {
+    font-size: 2vw;
+    color: white;
+    font-family: serif;
+    float: left;
+}
+
+.pdiv {
+    position: absolute;
+    margin-top: -4vw;
+    margin-left: 5.5vw;
+}
+
+.topimg {
+    width: 70%;
+    height: 52vh;
+    transition: .5s ease;
+    margin-left: 3vw;
+}
+
+.top:hover .topimg {
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 1200px) {
+    .topimg {
+        height: 48vh;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .topimg {
+        height: 45vh;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .topimg {
+        height: 42vh;
+    }
+}
+
+@media only screen and (max-width: 784px) {
+    .topimg {
+        height: 38vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .topimg {
+        height: 34vh;
+    }
+}

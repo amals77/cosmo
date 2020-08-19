@@ -1,0 +1,57 @@
+<div style="position: relative;display: inline-block;height: 100vh;display: block;" id="data">
+    <div style="position: absolute;">
+        <div *ngFor="let item of cart" class="itreation">
+            <div class="image">
+                <img src="../../assets//images/{{item.image}}" class="subimg">
+            </div>
+            <div class="buy">
+                <p class="deals"> {{item.name}}</p>
+                <p class="txt" style="color: grey;"> {{item.desc}}</p>
+                <b class="txt">₹</b> <b class="txt" id="{{item.code}}">{{item.price}}</b>
+
+                <p class="txt">size: {{item.size}}</p>
+                Qty:<select (click)="quantity($event.target.value,item.price,item.code)">
+        <option value=1 >1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+      </select>
+            </div>
+            <div class="rem">
+                <button class="remove" (click)="remove(item,item.code)">REMOVE</button>
+            </div>
+        </div>
+    </div>
+    <div class="total">
+        <div style="width: 100%"> <b class="priced">PRICE DETAILS</b></div>
+
+        <div class="detail">
+            <p>Bag Total</p>
+            <P>Bag Discount</P>
+            <p>Platform Fee</p>
+            <div class="line"></div>
+            <br>
+            <b>Total Amount</b>
+        </div>
+        <div class="detail">
+            <p>₹{{cost}}</p>
+            <P>₹{{discount}}</P>
+            <p>₹{{platfee}}</p>
+
+            <br>
+            <b>₹{{totalAmount}}</b>
+        </div>
+
+        <button class="place">PLACE ORDER ❯</button>
+
+    </div>
+</div>
+<div style="position: relative;display: inline-block;height: 100vh;display: none;" id="nodata">
+    <div class="empty">
+        <img src="../../assets//images/bag.png" class="bag">
+    </div>
+    <b class="hey">Hey, Your bag looks so empty!
+  </b>
+
+</div>

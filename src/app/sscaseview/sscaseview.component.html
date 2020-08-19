@@ -1,0 +1,36 @@
+<div class="imageside">
+    <div class="sub">
+        <img src="../../assets/images/{{showcase.image1}}" class="subimg" (click)="subimg1()" id="smallimg1">
+        <img src="../../assets/images/{{showcase.image2}}" class="subimg" (click)="subimg2()" id="smallimg2">
+        <img src="../../assets/images/{{showcase.image}}" class="subimg" (click)="subimg3()" id="smallimg3">
+    </div>
+    <img src="../../assets/images/{{showcase.image}}" class="topimg" id="displayImg">
+</div>
+<div class="details">
+    <div class="sec1">
+        <b><p class="deals">{{showcase.name}}</p></b>
+        <p class="desc">{{showcase.desc}}</p>
+        <p class="deals">Rs. {{showcase.price/2}}</p>
+        <del class="off" style="float:left ;color: grey;">Rs. {{showcase.price}}</del>
+        <p class="off" style="color: orangered;">(50% OFF)</p>
+        <b class="tax">inclusive of all taxes</b>
+        <div class="size">
+            <b style="font-size: 1vw;">SELECT SIZE:</b>
+        </div>
+        <div class="sizebtn" *ngFor="let item of sizebtn">
+            <button class="btn">{{item}}</button>
+
+        </div>
+    </div>
+    <div class="sec2">
+        <div class="cart">
+            <button class="ATC"><b style="font-size: 1vw;">ADD TO CART</b></button>
+        </div>
+        <div class="auth">
+            <p class="des">100% Original Products</p>
+            <p class="des">Free Delivery on order above Rs. 1000</p>
+            <p class="des">Pay on delivery might be available</p>
+            <p class="des">Easy 30 days returns and exchanges</p>
+        </div>
+    </div>
+</div>

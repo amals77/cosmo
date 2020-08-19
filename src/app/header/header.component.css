@@ -1,0 +1,158 @@
+.navbar-style {
+    box-shadow: 0 5px 10px #efefef;
+}
+
+.top {
+    margin-left: -4vw;
+}
+
+.tog {
+    margin-left: 5vw;
+    position: absolute;
+}
+
+.icon-bar {
+    background: black;
+}
+
+.categories {
+    margin-left: 10vw;
+}
+
+.logo {
+    height: 48px;
+    width: 150px;
+    float: left;
+    margin-left: 22vw;
+}
+
+.details {
+    margin-left: 83vw;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 40px;
+    margin-top: -6px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.srch {
+    width: 50vw;
+    margin-left: 10vw;
+}
+
+.srchbtn {
+    width: 30px;
+}
+
+a {
+    color: black;
+}
+
+.cart-icon {
+    display: none;
+}
+
+.login-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+    .cart {
+        display: none;
+    }
+    .cart-icon {
+        display: block;
+        font-size: 18px;
+    }
+    .logo {
+        margin-left: 17vw;
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+    .login-icon {
+        display: block;
+        font-size: 18px;
+    }
+    .login {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .logo {
+        margin-left: 11vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .logo {
+        margin-left: 15vw;
+        width: 110px;
+    }
+    .login-icon {
+        display: block;
+        font-size: 14px;
+    }
+    .cart-icon {
+        display: block;
+        font-size: 14px;
+    }
+    .categories {
+        margin-left: 4vw;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .details {
+        /* position: absolute; */
+        margin-left: 80vw;
+    }
+    .categories {
+        margin-left: 3vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        margin-left: 40vw;
+        width: 100px;
+        height: 40px;
+    }
+    .categories {
+        margin-left: 4vw;
+        margin-top: 5vw;
+    }
+}

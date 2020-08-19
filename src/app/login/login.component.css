@@ -1,0 +1,86 @@
+.main {
+    position: relative;
+    display: inline-block;
+}
+
+.line {
+    width: 3px;
+    height: 50vh;
+    background-color: rgba(58, 132, 241, 0.836);
+    margin-left: 50vw;
+    margin-bottom: 7vw;
+    float: left;
+    margin-top: 7vw;
+    /* display: inline-block; */
+}
+
+.reg {
+    width: 40vw;
+    margin-left: 55vw;
+    margin-top: 7vw;
+    position: absolute;
+    float: left;
+}
+
+.undr {
+    margin-top: 2.5vw;
+    margin-left: 17.5vw;
+    height: 3px;
+    width: 5vw;
+    background-color: black;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.detail {
+    font-size: 1vw;
+}
+
+.cont {
+    margin-left: 5vw;
+    margin-top: 5vw;
+    position: absolute;
+    top: 0;
+}
+
+.rn {
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box {
+    height: 3vw;
+    width: 30vw;
+}
+
+.su {
+    background-color: rgba(58, 132, 241, 0.836);
+    border: none;
+    color: white;
+    padding: 1vw 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    margin: 1px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.btn {
+    /* position: absolute; */
+    /* top: 0; */
+    margin-top: 2vw;
+    margin-left: 9vw;
+}
+
+.log {
+    float: left;
+    width: 40vw;
+    margin-top: 7vw;
+    margin-left: 5vw;
+    position: absolute;
+    top: 0;
+}

@@ -1,0 +1,166 @@
+.hotdeals {
+    width: 100%;
+    margin-top: 3vw;
+    display: inline-block;
+    /* position: absolute; */
+}
+
+.items {
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.hotdeal {
+    width: 25%;
+    margin-top: 3vw;
+    float: left;
+    padding-left: 1vw;
+}
+
+.change {
+    position: relative;
+    display: inline-block;
+}
+
+.hotdealimg {
+    width: 90%;
+    height: 40vh;
+}
+
+.imgtop {
+    width: 90%;
+    height: 40vh;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.change:hover .imgtop {
+    display: inline;
+}
+
+.package {
+    margin-left: 3vw;
+}
+
+.name {
+    font-size: 2vw;
+}
+
+.model {
+    font-size: 1.5vw;
+    padding-left: 2vw;
+}
+
+.price {
+    font-size: 1.5vw;
+    padding-left: 5vw;
+}
+
+.package1 {
+    margin-left: 1.5vw;
+}
+
+.model1 {
+    font-size: 1.5vw;
+    padding-left: 5vw;
+}
+
+.price1 {
+    font-size: 1.5vw;
+    padding-left: 7.5vw;
+}
+
+.package2 {
+    margin-left: 4.5vw;
+}
+
+.model2 {
+    font-size: 1.5vw;
+    padding-left: 2vw;
+}
+
+.price2 {
+    font-size: 1.5vw;
+    padding-left: 4vw;
+}
+
+.package3 {
+    margin-left: 1vw;
+}
+
+.model3 {
+    font-size: 1.5vw;
+    padding-left: 7vw;
+}
+
+.price3 {
+    font-size: 1.5vw;
+    padding-left: 7vw;
+}
+
+@media only screen and (max-width: 1200px) {
+    .hotdealimg {
+        height: 38vh;
+    }
+    .imgtop {
+        height: 38vh;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .hotdealimg {
+        height: 36vh;
+    }
+    .imgtop {
+        height: 36vh;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .hotdealimg {
+        height: 33vh;
+    }
+    .imgtop {
+        height: 33vh;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .hotdealimg {
+        height: 31vh;
+    }
+    .imgtop {
+        height: 31vh;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .hotdealimg {
+        height: 30h;
+    }
+    .imgtop {
+        height: 30.2vh;
+    }
+    .hotdeal {
+        width: 45%;
+        padding-left: 12vw;
+    }
+    .package {
+        margin-left: 5.5vw;
+    }
+    .package1 {
+        margin-left: 4.5vw;
+    }
+    .package2 {
+        margin-left: 7.5vw;
+    }
+    .package3 {
+        margin-left: 4vw;
+    }
+}

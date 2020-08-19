@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cosmo"
+    }
+  },
+  "defaultProject": "cosmo",
+  "cli": {
+    "analytics": "895a4eeb-494a-4c41-9cd7-52aa696a7bd2"
+  }
 }

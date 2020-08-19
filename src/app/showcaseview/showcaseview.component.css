@@ -1,0 +1,146 @@
+.imageside {
+    width: 50%;
+    height: 100vh;
+    /* background-color: red; */
+    float: left;
+    position: relative;
+}
+
+.sec1 {
+    display: inline-block;
+}
+
+.sub {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    /* background-color: green; */
+    margin-left: 3vw;
+    margin-top: 5vw;
+    height: 60vh;
+}
+
+.details {
+    margin-top: 2vw;
+    width: 40%;
+    height: 100vh;
+    /* background-color: yellow; */
+    display: inline-block;
+}
+
+.topimg {
+    margin-left: 15vw;
+    margin-top: 2vw;
+    width: 60%;
+    height: 75vh;
+    cursor: pointer;
+}
+
+.subimg {
+    width: 70%;
+    cursor: pointer;
+    height: 18vh;
+    margin-top: 1vw;
+}
+
+.deals {
+    font-size: 1.8vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.desc {
+    font-size: 1.3vw;
+    color: grey;
+}
+
+.tax {
+    color: green;
+    font-size: 1vw;
+}
+
+.size {
+    margin-top: 2vw;
+}
+
+.sizebtn {
+    margin-top: 2vw;
+    float: left;
+    /* background-color: red; */
+}
+
+.btn {
+    /* border-radius: 50%; */
+    margin-left: 1vw;
+    display: inline-block;
+    border: 2px solid;
+    border-color: grey;
+    padding: 1vw;
+    background-color: Transparent;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    border-color: rgba(58, 132, 241, 0.836);
+}
+
+.cart {
+    clear: left;
+    margin-top: 3vw;
+}
+
+.ATC {
+    width: 50%;
+    margin-left: 1vw;
+    display: inline-block;
+    border: 2px solid;
+    padding: 1vw;
+    background-color: rgba(58, 132, 241, 0.836);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.ATC:disabled {
+    background: #dddddd;
+}
+
+.auth {
+    margin-top: 2vw;
+}
+
+.des {
+    font-size: 1vw;
+}
+
+@media only screen and (max-width: 1010px) {
+    .topimg {
+        height: 60vh;
+    }
+    .imageside {
+        height: 70vh;
+    }
+    .details {
+        height: 70vh;
+    }
+    .subimg {
+        height: 13vh;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .topimg {
+        height: 50vh;
+    }
+    .imageside {
+        height: 60vh;
+    }
+    .details {
+        height: 60vh;
+    }
+    .subimg {
+        height: 11vh;
+    }
+}

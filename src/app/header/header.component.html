@@ -1,0 +1,49 @@
+<nav class="navbar navbar-style">
+
+    <div class="top">
+        <div class="tog">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#category">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        </div>
+        <div class="collapse navbar-collapse" id="category" style="float:left">
+            <div class="categories">
+                <ul class="nav navbar-nav " *ngFor="let item of categories">
+                    <li><a [routerLink]="['/subcat']" style="float: left;" (click)="selectCatagory(item.name)">{{item.name}}</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <a [routerLink]="['/cosmo']"> <img class="logo" src="../../assets/images/cosmo2.png"></a>
+        </div>
+
+        <div class="details">
+            <ul class="nav navbar-nav">
+                <li class="login"><a [routerLink]="['/login']">LOGIN</a></li>
+                <li class="login-icon" style="float: left;"><a [routerLink]="['/login']"><span class="glyphicon glyphicon-user login-icon"></span></a></li>
+                <li style="display: none;"><a href="#">ACCOUNT</a></li>
+                <li class="cart"><a href="#" [routerLink]="['/cart']">CART</a></li>
+                <li class="cart-icon" style="float: left;"><a href="#" [routerLink]="['/cart']"><i class='fas fa-shopping-bag cart-icon'></i></a></li>
+                <li style="float: left;">
+                    <a href="#" id="mysrch" (click)="search()"> <span class="glyphicon glyphicon-search search-icon"></span> </a>
+                </li>
+            </ul>
+        </div>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <button class="close" id="close" (click)='close()'>&times;</button>
+
+                <form action="">
+                    <input type="text" placeholder="Search.." name="search" class="srch">
+                    <button type="submit"><i class="fa fa-search srchbtn"></i></button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</nav>
