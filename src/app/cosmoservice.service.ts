@@ -43,24 +43,24 @@ getshowcase(scase):Observable<Ipro[]>{
     tocart (e){
   this.products.push(e)
 
-      localStorage.setItem("products",JSON.stringify(this.products))
+      localStorage.setItem("cart",JSON.stringify(this.products))
 
     }
     getcart(){
 
-     var product=localStorage.getItem("products")
+     var product=localStorage.getItem("cart")
 
      return product
 
     }
     remcart(index){
-      var product=localStorage.getItem("products")
+      var product=localStorage.getItem("cart")
       var a=JSON.parse(product)
 
   a.splice(index,1)
 
   this.products=a
-  localStorage.setItem("products",JSON.stringify(this.products))
+  localStorage.setItem("cart",JSON.stringify(this.products))
 
 
     }
